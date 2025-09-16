@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sourish Dewani — CV</title>
+  <meta name="description" content="CV website of Sourish Dewani — MBA Candidate, ex‑Deloitte Business Technology Consultant." />
+  <style>
+    :root{
+      --bg: #f8fafc; /* slate-50 */
+      --card: #ffffff;
+      --ink: #0f172a; /* slate-900 */
+      --muted: #475569; /* slate-600 */
+      --line: #e2e8f0; /* slate-200 */
+      --accent: #0ea5e9; /* sky-500 */
+      --accent-ink: #0b4f6c;
+      --shadow: 0 1px 2px rgba(2,6,23,0.06), 0 8px 20px rgba(2,6,23,0.06);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:linear-gradient(#fff, var(--bg));color:var(--ink);font:400 16px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";}
+    a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-style:dotted}
+    h1,h2,h3{margin:0 0 .25rem 0}
+    h2{font-size:1.125rem}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.7);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+    .header-row{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:12px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .avatar{height:36px;width:36px;border-radius:12px;background:#0f172a;color:#fff;display:grid;place-items:center;font-weight:700}
+    .title{font-size:15px;font-weight:600}
+    .subtitle{font-size:12px;color:var(--muted)}
+    .nav{display:none;gap:8px}
+    .nav a{display:inline-block;padding:6px 12px;border-radius:999px;text-decoration:none}
+    .nav a:hover{background:#f1f5f9}
+    .cta{display:flex;gap:8px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:14px;text-decoration:none;background:#fff;box-shadow:var(--shadow)}
+    .btn svg{height:16px;width:16px}
+    .hero{padding:28px 0}
+    .grid{display:grid;gap:16px}
+    @media(min-width: 900px){.nav{display:flex}.hero-grid{grid-template-columns:1fr 260px}}
+    .p{margin:0 0 12px 0;line-height:1.6;color:#0f172acc}
+    .p:last-child{margin:0}
+    .pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:12px}
+    .quick{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:16px}
+    .quick h3{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .q-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .q{border:1px solid var(--line);border-radius:14px;padding:12px}
+    .q .num{font-size:22px;font-weight:700}
+    .q .cap{font-size:12px;color:var(--muted)}
+    .sections{padding:0 0 64px 0}
+    section{scroll-margin-top:96px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow)}
+    .sec-head{display:flex;align-items:center;gap:8px;margin:24px 0 12px 0}
+    .sec-hint{font-size:12px;color:var(--muted)}
+    .list{padding-left:18px;margin:8px 0}
+    .list li{margin:6px 0}
+    .muted{color:var(--muted)}
+    .row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{font-size:12px;border:1px dashed var(--line);border-radius:999px;padding:6px 10px;background:#f8fafc}
+    .grid-2{display:grid;gap:12px}
+    @media(min-width:900px){.grid-2{grid-template-columns:repeat(2,1fr)}}
+    .grid-3{display:grid;gap:12px}
+    @media(min-width:900px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+    .footer{border-top:1px solid var(--line);padding:24px 0;font-size:12px;color:var(--muted)}
+    .icon{height:18px;width:18px}
+    .lead{font-size:28px;font-weight:700}
+    .tag{display:inline-block;font-size:12px;padding:3px 8px;border-radius:999px;background:#e0f2fe;border:1px solid #bae6fd;color:#075985}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-row">
+      <div class="brand">
+        <div class="avatar">S</div>
+        <div>
+          <div class="title">Sourish Dewani</div>
+          <div class="subtitle">MBA Candidate, BITSoM ’26 · Ex‑Deloitte Business Technology Consultant</div>
+        </div>
+      </div>
+      <nav class="nav" id="topnav">
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#internships">Internships</a>
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#extras">Awards & More</a>
+      </nav>
+      <div class="cta">
+        <a class="btn" href="CV_Sourish_Dewani.pdf" download>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV (PDF)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="container hero">
+    <div class="grid hero-grid">
+      <div>
+        <div class="lead">Hi, I’m Sourish.</div>
+        <p class="p">Business technology consultant turned MBA candidate with 33 months of experience driving release quality, UX adoption, and delivery velocity at scale (4.5M+ users). Recognized for client impact and rapid progression; now seeking product/consulting roles where analytical depth meets execution.</p>
+        <div class="chips" style="margin-top:8px">
+          <span class="pill">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 12.414a4 4 0 10-5.657 5.657l4.243 4.243a8 8 0 1111.314-11.314l-4.243 4.243z"/></svg>
+            Mumbai, India
+          </span>
+          <a class="pill" href="mailto:sourishdewani@example.com"> 
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v6a2 2 0 002 2z"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+      <aside class="quick">
+        <h3>Quick Stats</h3>
+        <div class="q-grid">
+          <div class="q"><div class="num">33</div><div class="cap">Months Experience</div></div>
+          <div class="q"><div class="num">4.5M+</div><div class="cap">Users Impacted</div></div>
+          <div class="q"><div class="num">$3M+</div><div class="cap">Value Captured</div></div>
+          <div class="q"><div class="num">15</div><div class="cap">Release Cycles Led</div></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Sections -->
+  <div class="container sections">
+    <!-- Education -->
+    <div class="sec-head" id="education"><h2>Education</h2></div>
+    <div class="card">
+      <div class="row">
+        <div>
+          <div><strong>M.B.A.</strong></div>
+          <div class="muted">BITS School of Management (BITSoM)</div>
+        </div>
+        <div class="muted">Class of 2026 · Mumbai</div>
+      </div>
+      <hr style="border:0;border-top:1px solid var(--line);margin:12px 0">
+      <div class="row">
+        <div>
+          <div><strong>B.E., Computer Engineering (8.69/10)</strong></div>
+          <div class="muted">Thadomal Shahani Engineering College (TSEC)</div>
+        </div>
+        <div class="muted">2021 · Mumbai</div>
+      </div>
+      <hr style="border:0;border-top:1px solid var(--line);margin:12px 0">
+      <div class="row">
+        <div>
+          <div><strong>XII, 75.54%</strong></div>
+          <div class="muted">Bhavani Shankar Road Jr. College (HSC)</div>
+        </div>
+        <div class="muted">2017 · Mumbai</div>
+      </div>
+      <hr style="border:0;border-top:1px solid var(--line);margin:12px 0">
+      <div class="row">
+        <div>
+          <div><strong>X, 88.5%</strong></div>
+          <div class="muted">Bombay Scottish School, Mahim (ICSE)</div>
+        </div>
+        <div class="muted">2015 · Mumbai</div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="sec-head" id="experience"><h2>Experience</h2><span class="sec-hint">· Impact highlights & awards</span></div>
+    <div class="card">
+      <div class="row">
+        <div>
+          <div><strong>Business Technology Consultant</strong></div>
+          <div class="muted">Deloitte USI</div>
+        </div>
+        <div class="muted">Sept 2021 – Jun 2024</div>
+      </div>
+      <div class="grid-2" style="margin-top:12px">
+        <div class="card" style="padding:14px">
+          <div class="tag">Strategy & Prioritization</div>
+          <ul class="list">
+            <li>Accelerated defect resolution (−25% TAT), unlocking ~$1M over 24 releases</li>
+            <li>Refined 100+ pre‑screen criteria; +12% prediction accuracy, fewer evaluation errors</li>
+            <li>Raised test coverage by 45%, mitigating release risk and ensuring smoother rollouts</li>
+            <li>Ran 25+ PoCs to prioritize roadmap items; −12% overall TAT</li>
+          </ul>
+        </div>
+        <div class="card" style="padding:14px">
+          <div class="tag">Process & Execution</div>
+          <ul class="list">
+            <li>Redesigned portal UX; −30% page load time; improved adoption/retention for 4.5M+ users</li>
+            <li>Streamlined 90+ stories/CRs to reduce delays and fast‑track high‑impact go‑lives</li>
+            <li>Fast‑tracked delivery to capture $2M revenue with a 30‑member cross‑functional squad</li>
+          </ul>
+        </div>
+        <div class="card" style="padding:14px">
+          <div class="tag">Team & Stakeholders</div>
+          <ul class="list">
+            <li>Mentored 5 new hires; −40% defects and smoother delivery across releases</li>
+            <li>Delivered 10+ KT sessions for US counterparts to enable enhancement integration</li>
+            <li>Led 9 members across 15 releases managing test‑class module; averted 90+ hours downtime</li>
+          </ul>
+        </div>
+        <div class="card" style="padding:14px">
+          <div class="tag">User Experience</div>
+          <ul class="list">
+            <li>Improved 40+ high‑traffic pages; −40% reported issues; better CSAT</li>
+            <li>Personalization across 120+ pages in 6 weeks, boosting adoption metrics</li>
+            <li>Built no‑code layouts with 15+ partners to speed UI releases</li>
+          </ul>
+        </div>
+      </div>
+      <div class="chips" style="margin-top:10px">
+        <span class="chip">Exceptional Client rating (2024) for impact at 4.5M+ user scale</span>
+        <span class="chip">Fast‑tracked to Consultant in 30 months (6 months early)</span>
+        <span class="chip">Applause & Spot Awards (1 of 80 among 8,000+) for client ownership</span>
+      </div>
+    </div>
+
+    <!-- Internships -->
+    <div class="sec-head" id="internships"><h2>Internships</h2></div>
+    <div class="grid-3">
+      <div class="card">
+        <div><strong>Business Consulting Intern</strong></div>
+        <div class="muted">KPMG – Global Business Services</div>
+        <div class="muted" style="font-size:12px;margin-top:4px">Apr 2025 – May 2025</div>
+        <ul class="list">
+          <li>Designed cost‑optimization for a $1B+ client; GCC setup & outsourcing levers</li>
+          <li>Assessed 8 levers covering $200M+ addressable cost across global support functions</li>
+          <li>Benchmarked 50+ KPIs across 6+ functions; fed 3+ tailored bids/proposals</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div><strong>Database Management Intern</strong></div>
+        <div class="muted">IndusInd Bank</div>
+        <div class="muted" style="font-size:12px;margin-top:4px">Dec 2019 – Jan 2020</div>
+        <ul class="list">
+          <li>Analyzed AWR reports for Oracle DB; enabled self‑tuning & 100% error detection</li>
+          <li>Implemented data masking & encryption; supported DB security/maintenance</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div><strong>Marketing Intern</strong></div>
+        <div class="muted">Sports Wagon LLP</div>
+        <div class="muted" style="font-size:12px;margin-top:4px">Jun 2019 – Aug 2019</div>
+        <ul class="list">
+          <li>Generated 30+ leads; converted 2 top educational institutions</li>
+          <li>Built 20+ decks; ran email/WhatsApp outreach for school campaigns</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="sec-head" id="projects"><h2>Projects</h2></div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="row">
+          <div><strong>NEC Environmental Hackathon (AgriTech)</strong></div>
+          <div class="muted" style="font-size:12px">Mar 2020</div>
+        </div>
+        <ul class="list">
+          <li>Placed 3rd/1476 teams; won ₹50K; sold business model IP to NEC Japan</li>
+          <li>Prototyped IoT fire detection and ML stubble‑growth predictor (88% accuracy)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Leadership -->
+    <div class="sec-head" id="leadership"><h2>Positions of Responsibility</h2></div>
+    <div class="grid-2">
+      <div class="card">
+        <div><strong>General Secretary – Placement Committee</strong></div>
+        <ul class="list">
+          <li>Screened 50+ applicants; finalized 8 junior committee hires</li>
+          <li>Coordinated 25+ corporate talks & guest lectures for 150+ students</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div><strong>Director – Rotaract Club of Andheri</strong></div>
+        <ul class="list">
+          <li>Led 6 workshops with 400+ participants for skill development</li>
+          <li>Reduced accident risk for ~40 street dogs via reflective collars & food</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div><strong>President – Unnat Bharat Abhiyan</strong></div>
+        <ul class="list">
+          <li>₹1.75 Lacs from MoE & IIT‑D; mandate delivered in 5+ vil
